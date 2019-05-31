@@ -1,8 +1,9 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
 	   ceil round
-SRC = $(CALC:%=calc/%)
+TRIG = tan cos sin
+SRC = $(CALC:%=calc/%) $(CALC:%=trig/%)
 SRCF = $(SRC:%=%.c)
-OBJ = $(CALC:%=%.o)
+OBJ = $(CALC:%=%.o) $(trig:%=%.o)
 NAME = math.a
 
 all: $(NAME)

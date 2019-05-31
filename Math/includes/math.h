@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:41:37 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 14:47:52 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,10 @@ double			max_d(double a, double b);
 long			vfloor(double val);
 long			vceil(double val);
 long			vround(double val);
+
+//Trig
+double			vtan(double val);
+double			vsin(double val);
+double			vcos(double val);
 
 #endif
