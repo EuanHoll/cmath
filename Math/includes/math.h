@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:37:37 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 14:41:37 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ long			max(long a, long b);
 double			max_d(double a, double b);
 long			vfloor(double val);
 long			vceil(double val);
+long			vround(double val);
 
 #endif

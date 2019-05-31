@@ -1,5 +1,5 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
-	   ceil
+	   ceil round
 SRC = $(CALC:%=calc/%)
 SRCF = $(SRC:%=%.c)
 OBJ = $(CALC:%=%.o)
