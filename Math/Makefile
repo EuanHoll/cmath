@@ -1,4 +1,5 @@
-CALC = powlo powint sqrtlo sqrtint min min_d max max_d
+CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
+	   ceil
 SRC = $(CALC:%=calc/%)
 SRCF = $(SRC:%=%.c)
 OBJ = $(CALC:%=%.o)
