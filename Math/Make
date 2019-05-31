@@ -1,5 +1,5 @@
-SRC = 
-SRCF = $(SRC:%=ft_%.c)
+SRC = powlo
+SRCF = $(SRC:%=%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = math.a
 
