@@ -1,12 +1,13 @@
-SRC = powlo powint sqrtlo sqrtint
+CALC = powlo powint sqrtlo sqrtint min min_d max max_d
+SRC = $(CALC:%=calc/%)
 SRCF = $(SRC:%=%.c)
-OBJ = $(SRCF:%.c=%.o)
+OBJ = $(CALC:%=%.o)
 NAME = math.a
 
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SRCF) -g -I ./includes
+	gcc -Wall -Werror -Wextra -c $(SRCF) -g -I ./includes 
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:
