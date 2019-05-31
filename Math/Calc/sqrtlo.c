@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   math.h                                             :+:    :+:            */
+/*   sqrt.c                                             :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 13:58:39 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/05/31 13:54:03 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/05/31 13:57:48 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATH_H
-# define MATH_H
+unsigned long	sqrtlo(unsigned long nb)
+{
+	unsigned long i;
+	unsigned long j;
 
-//Calc
-unsigned long	powlo(unsigned long base, unsigned long expo);
-unsigned int	powint(unsigned int base, unsigned int expo);
-unsigned long	sqrtlo(unsigned long nb);
-unsigned int	sqrtlo(unsigned int nb);
-
-#endif
+	i = 1;
+	j = 0;
+	if (nb <= 0)
+		return (0);
+	if (nb % 2 == 0)
+		i++;
+	while (i <= nb / 2)
+	{
+		j = i * i;
+		if (j > nb)
+			return (0);
+		if (j == nb)
+			return (i);
+		i += 2;
+	}
+	return (0);
+}
