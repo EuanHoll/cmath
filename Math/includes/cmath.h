@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   math.h                                             :+:    :+:            */
+/*   cmath.h                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:47:52 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 14:56:59 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATH_H
-# define MATH_H
+#ifndef CMATH_H
+# define CMATH_H
 
 //Calc
 unsigned long	powlo(unsigned long base, unsigned long expo);
@@ -25,6 +25,8 @@ double			max_d(double a, double b);
 long			vfloor(double val);
 long			vceil(double val);
 long			vround(double val);
+double			abs(double a);
+int				aprox(double a, double b);
 
 //Trig
 double			vtan(double val);

@@ -1,10 +1,10 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
-	   ceil round
+	   ceil round abs aprox
 TRIG = tan cos sin
 SRC = $(CALC:%=calc/%) $(CALC:%=trig/%)
 SRCF = $(SRC:%=%.c)
 OBJ = $(CALC:%=%.o) $(trig:%=%.o)
-NAME = math.a
+NAME = cmath.a
 
 all: $(NAME)
 
@@ -13,7 +13,7 @@ $(NAME):
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ) ./includes/math.gch
+	rm -f $(OBJ) ./includes/cmath.gch
 
 mclean: $(NAME) clean
 
