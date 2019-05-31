@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:28:31 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:33:54 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,7 @@ double			lerpinverse(double a, double b, double t);
 double			vtan(double val);
 double			vsin(double val);
 double			vcos(double val);
+double			vlog10(double val);
+double			vlog(double val);
 
 #endif
