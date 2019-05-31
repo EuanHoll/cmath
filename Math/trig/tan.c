@@ -6,9 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:47:03 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:47:24 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:10:34 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <math.h>
 
 double		vtan(double val)
 {

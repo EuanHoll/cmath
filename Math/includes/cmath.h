@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:03:53 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:08:50 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@ double			max_d(double a, double b);
 long			vfloor(double val);
 long			vceil(double val);
 long			vround(double val);
-double			abs(double a);
+double			vabs(double a);
 int				aprox(double a, double b);
 double			clamp01(double val);
 double			clamp(double val, double min, double max);
+double			lerp(double a, double b, double t);
+double			lerpunclamped(double a, double b, double t);
 
 //Trig
 double			vtan(double val);

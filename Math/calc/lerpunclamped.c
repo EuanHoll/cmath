@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   abs.c                                              :+:    :+:            */
+/*   lerpunclamped.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/31 14:50:58 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:09:02 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/05/31 15:06:23 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/05/31 15:06:58 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-double		vabs(double a)
+double		lerpunclamped(double a, double b, double t)
 {
-	return (a < 0 ? -a : a);
+	return (a + (b - a) * t);
 }

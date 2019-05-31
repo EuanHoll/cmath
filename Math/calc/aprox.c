@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:48:48 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:55:22 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:09:15 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int		aprox(double a, double b)
 {
-	return (abs(b - a) < 0.001);
+	return (vabs(b - a) < 0.001);
 }

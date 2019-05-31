@@ -1,9 +1,9 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
-	   ceil round abs aprox clamp clamp01
+	   ceil round abs aprox clamp clamp01 lerp lerpunclamped 
 TRIG = tan cos sin
-SRC = $(CALC:%=calc/%) $(CALC:%=trig/%)
+SRC = $(CALC:%=calc/%) $(TRIG:%=trig/%)
 SRCF = $(SRC:%=%.c)
-OBJ = $(CALC:%=%.o) $(trig:%=%.o)
+OBJ = $(CALC:%=%.o) $(TRIG:%=%.o)
 NAME = cmath.a
 
 all: $(NAME)
