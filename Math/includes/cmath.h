@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:36:11 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 16:06:01 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ double			lerp(double a, double b, double t);
 double			lerpunclamped(double a, double b, double t);
 double			lerpinverse(double a, double b, double t);
 int				sign(double val);
+float			perlin2d(float x, float y, float freq, float depth);
 
 //Trig
 double			vtan(double val);
