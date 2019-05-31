@@ -1,4 +1,4 @@
-SRC = powlo
+SRC = powlo powint
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = math.a
