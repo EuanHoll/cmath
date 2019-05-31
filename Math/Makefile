@@ -1,5 +1,5 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
-	   ceil round abs aprox
+	   ceil round abs aprox clamp clamp01
 TRIG = tan cos sin
 SRC = $(CALC:%=calc/%) $(CALC:%=trig/%)
 SRCF = $(SRC:%=%.c)

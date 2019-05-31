@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:00:54 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:03:53 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ long			vceil(double val);
 long			vround(double val);
 double			abs(double a);
 int				aprox(double a, double b);
+double			clamp01(double val);
+double			clamp(double val, double min, double max);
 
 //Trig
 double			vtan(double val);
