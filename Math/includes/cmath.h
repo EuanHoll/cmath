@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:08:50 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/05/31 15:28:31 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ double			clamp01(double val);
 double			clamp(double val, double min, double max);
 double			lerp(double a, double b, double t);
 double			lerpunclamped(double a, double b, double t);
+double			lerpinverse(double a, double b, double t);
 
 //Trig
 double			vtan(double val);
