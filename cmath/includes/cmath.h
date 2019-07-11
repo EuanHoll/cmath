@@ -13,6 +13,10 @@
 #ifndef CMATH_H
 # define CMATH_H
 
+# define PI 3.14159265359
+# define PI2 6.28318530718
+# define DETAIL 30
+
 //Calc
 unsigned long	powlo(unsigned long base, unsigned long expo);
 unsigned int	powint(unsigned int base, unsigned int expo);
@@ -34,6 +38,7 @@ double			lerpunclamped(double a, double b, double t);
 double			lerpinverse(double a, double b, double t);
 int				sign(double val);
 float			perlin2d(float x, float y, float freq, float depth);
+double			fract(double val);
 
 //Trig
 double			vtan(double val);

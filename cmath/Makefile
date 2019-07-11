@@ -1,6 +1,6 @@
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
 	   ceil round abs aprox clamp clamp01 lerp lerpunclamped \
-	   lerpinverse sign perlin2d
+	   lerpinverse sign perlin2d fract
 TRIG = tan cos sin log log10
 SRC = $(CALC:%=calc/%) $(TRIG:%=trig/%)
 SRCF = $(SRC:%=%.c)
@@ -10,7 +10,7 @@ NAME = cmath.a
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SRCF) -g -I ./includes 
+	gcc -Wall -Werror -Wextra -c $(SRCF) -I ./includes
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:
