@@ -10,9 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "cmath.h"
 #include <math.h>
 
 double		vcos(double val)
 {
-	return (cos(val));
+	double	ia;
+	int		i;
+	double	temp;
+
+	ia = 1;
+	val = fmod(val, PI2);
+	if (val > PI)
+	{
+		val -= PI;
+		ia = -1;
+	}
+	temp = 0.0;
+	i = 0;
+	while (i <= DETAIL)
+	{
+		temp += pow(-1, i) * (pow(val, 2 * i) / (double)fract(2 * i));
+		i++;
+	}
+	return (ia * temp);
 }

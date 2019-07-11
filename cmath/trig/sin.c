@@ -12,11 +12,10 @@
 
 #include "cmath.h"
 #include <math.h>
-#include <stdio.h>
 
-static double	subsin(double val)
+double			vsin(double val)
 {
-	double		ia;
+	double	ia;
 	int		i;
 	double	temp;
 
@@ -35,12 +34,4 @@ static double	subsin(double val)
 		i++;
 	}
 	return (ia * temp);
-}
-
-double			vsin(double val)
-{
-	if (val < 0)
-		return (-subsin(val));
-	else
-		return (subsin(val));	
 }

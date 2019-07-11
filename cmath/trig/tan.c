@@ -11,8 +11,9 @@
 /* ************************************************************************** */
 
 #include <math.h>
+#include "cmath.h"
 
 double		vtan(double val)
 {
-	return (tan(val));
+	return (vsin(val) / vcos(val));
 }
