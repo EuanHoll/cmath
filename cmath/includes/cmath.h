@@ -15,7 +15,8 @@
 
 # define PI 3.14159265359
 # define PI2 6.28318530718
-# define DETAIL 30
+# define E 2.71828182845904523
+# define DETAIL 25
 
 //Calc
 unsigned long	powlo(unsigned long base, unsigned long expo);
