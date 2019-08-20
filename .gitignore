@@ -2,3 +2,5 @@
 *.o
 *.a
 tester
+tests/tests
+tests/tests
