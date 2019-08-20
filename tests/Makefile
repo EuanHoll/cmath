@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/20 12:48:38 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/20 15:43:39 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ BREW := $(shell brew --cellar)/..
 endif
 
 NAME = tests
-SRC = calc/abs
+SRC = calc/abs calc/approx calc/ceil calc/clamp
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRC:%=%.o)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
@@ -27,15 +27,15 @@ all: $(NAME)
 
 $(NAME): $(SRCF)
 	@echo "Building Tests"
-	@gcc -o $(NAME) $(SRCF) $(LIBS)
+	@gcc -o $(NAME) $(SRCF) $(INCLUDES) $(LIBS)
 	@echo "Tests Built"
 
 clean:
-	@make -C cmath/ clean
+	@make -C ../cmath/ clean
 	rm -f $(OBJ)
 
 fclean: clean
-	@make -C cmath/ fclean
+	@make -C ../cmath/ fclean
 	rm -f $(NAME)
 
 re: fclean all

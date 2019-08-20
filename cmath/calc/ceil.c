@@ -6,11 +6,13 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:34:02 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 15:35:40 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 long	m_ceil(double val)
 {
-	return ((long)(val + 1));
+	if (val < 0)
+		return ((long)val);
+	return (val != (double)((long)val) ? (long)(val + 1) : (long)val);
 }

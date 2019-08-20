@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   aprox.c                                            :+:    :+:            */
+/*   clamp.c                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/31 14:48:48 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/08/20 15:39:09 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/08/20 15:44:04 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
+#include <criterion/criterion.h>
+#include <limits.h>
 
-int		m_aprox(double a, double b)
+Test(clamp, zero_all)
 {
-	return (vabs(b - a) < 0.001);
+	cr_assert(m_clamp(0, 0, 0) == 0 );
+}
+
+Test(clamp, under)
+{
+	cr_assert(m_clamp(-5, 0, 5) == 0);
+}
+
+Test(clamp, above)
+{
+	cr_assert(m_clamp(5, -5, 0) == 0);
+}
+
+Test(clamp, reversed)
+{
+	cr_assert(m_clamp(4, 5, 0) == 0);
 }

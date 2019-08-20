@@ -6,7 +6,7 @@
 #    By: euan <ehollidg@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/04/04 15:51:09 by euan           #+#    #+#                 #
-#    Updated: 2019/08/20 12:42:59 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/20 15:34:00 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,16 +21,21 @@ LIBS = cmath/cmath.a
 all: $(NAME)
 
 $(NAME): $(SRCF)
+	@echo "Starting Building"
 	@make -C cmath/
+	@make -C tests/
 	@clang $(FLAGS) $(INCLUDES) -c $(SRCF)
-	clang -o $(NAME) $(OBJ) $(LIBS)
+	@clang -o $(NAME) $(OBJ) $(LIBS)
+	@echo "Finished Building"
 
 clean:
 	@make -C cmath/ clean
+	@make -C tests/ clean
 	rm -f $(OBJ)
 
 fclean: clean
 	@make -C cmath/ fclean
+	@make -C tests/ fclean
 	rm -f $(NAME)
 
 re: fclean all

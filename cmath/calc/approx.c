@@ -1,40 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   abs.c                                              :+:    :+:            */
+/*   approx.c                                           :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/08/20 12:48:02 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 15:28:44 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/05/31 14:48:48 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/08/20 15:11:01 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
-#include <criterion/criterion.h>
-#include <limits.h>
 
-Test(absolute, zero)
+int		m_approx(double a, double b)
 {
-	cr_assert(m_abs(0) == 0);
-}
-
-Test(absolute, negative)
-{
-	cr_assert(m_abs(-5) == 5);
-}
-
-Test(absolute, positive)
-{
-	cr_assert(m_abs(5) == 5);
-}
-
-Test(absolute, intmax)
-{
-	cr_assert(m_abs(INT_MAX) == INT_MAX);
-}
-
-Test(absolute, minint)
-{
-	cr_assert(m_abs(INT_MIN) == 2147483648);
+	return (m_abs(b - a) < 0.001);
 }

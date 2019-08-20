@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:46:20 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:30:35 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:46:04 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ double			m_sin(double val)
 	i = 0;
 	while (i <= DETAIL)
 	{
-		temp += pow(-1, i) * (pow(val, 2 * i + 1) / (double)fract(2 * i + 1));
+		temp += pow(-1, i) * (pow(val, 2 * i + 1) / (double)m_fract(2 * i + 1));
 		i++;
 	}
 	return (ia * temp);

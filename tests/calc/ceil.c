@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   abs.c                                              :+:    :+:            */
+/*   ceil.c                                             :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/08/20 12:48:02 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 15:28:44 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/08/20 15:21:34 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/08/20 15:37:47 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
 #include <criterion/criterion.h>
 #include <limits.h>
+#include <stdio.h>
+#include <math.h>
 
-Test(absolute, zero)
+Test(ceil, zero)
 {
-	cr_assert(m_abs(0) == 0);
+	cr_assert(m_ceil(0) == 0);
 }
 
-Test(absolute, negative)
+Test(ceil, positive)
 {
-	cr_assert(m_abs(-5) == 5);
+	cr_assert(m_ceil(4.1) == ceil(4.1));
 }
 
-Test(absolute, positive)
+Test(ceil, negative)
 {
-	cr_assert(m_abs(5) == 5);
-}
-
-Test(absolute, intmax)
-{
-	cr_assert(m_abs(INT_MAX) == INT_MAX);
-}
-
-Test(absolute, minint)
-{
-	cr_assert(m_abs(INT_MIN) == 2147483648);
+	cr_assert(m_ceil(-4.1) == ceil(-4.1));
 }

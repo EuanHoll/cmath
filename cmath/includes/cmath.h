@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:34:14 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 15:11:11 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ long			m_floor(double val);
 long			m_ceil(double val);
 long			m_round(double val);
 double			m_abs(double a);
-int				m_aprox(double a, double b);
+int				m_approx(double a, double b);
 double			m_clamp01(double val);
 double			m_clamp(double val, double min, double max);
 double			m_lerp(double a, double b, double t);
