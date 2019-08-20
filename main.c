@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/07/11 19:51:00 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/07/11 19:51:00 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 12:43:02 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,5 @@
 
 int		main(void)
 {
-	printf("OG -> %f\n", log(5));
-	printf("My -> %f\n", vlog(5));
 	return (0);
 }

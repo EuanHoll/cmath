@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:34:21 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:37:12 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-long	vfloor(double val)
+long	m_floor(double val)
 {
 	return ((long) val);
 }

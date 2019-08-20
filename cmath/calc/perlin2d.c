@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 15:45:15 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 16:07:28 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static float	noise2d(float x, float y)
 	return (smooth(low, high, j_frac));
 }
 
-float			perlin2d(float x, float y, float freq, float depth)
+float			m_perlin2d(float x, float y, float freq, float depth)
 {
 	float x_a = x * freq;
 	float y_a = y * freq;

@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   powlo.c                                            :+:    :+:            */
+/*   abs.c                                              :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/31 13:45:15 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/08/20 12:48:02 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/08/20 12:50:57 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long   m_powlo(unsigned long base, unsigned long expo)
-{
-    unsigned long i;
+#include "cmath.h"
+#include <criterion/criterion.h>
 
-    i = base;
-    while (expo > 0)
-    {
-        i *= base;
-        expo--;
-    }
-    return (i);
+Test(absolute, zero)
+{
+	cr_assert(vabs(0) == 0);
 }

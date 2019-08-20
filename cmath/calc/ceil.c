@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:34:02 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:37:43 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-long	vceil(double val)
+long	m_ceil(double val)
 {
 	return ((long)(val + 1));
 }

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   sqrt.c                                             :+:    :+:            */
+/*   sqrtlo.c                                           :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:54:03 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 13:57:48 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	sqrtlo(unsigned long nb)
+unsigned long	m_sqrtlo(unsigned long nb)
 {
 	unsigned long i;
 	unsigned long j;

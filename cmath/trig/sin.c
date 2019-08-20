@@ -6,14 +6,14 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:46:20 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:46:52 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:30:35 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
 #include <math.h>
 
-double			vsin(double val)
+double			m_sin(double val)
 {
 	double	ia;
 	int		i;

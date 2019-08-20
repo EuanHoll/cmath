@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 15:03:04 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:03:33 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-double		clamp01(double val)
+double		m_clamp01(double val)
 {
 	if (val > 0 && val < 1)
 		return (val);

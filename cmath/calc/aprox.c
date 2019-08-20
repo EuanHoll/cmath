@@ -6,13 +6,13 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:48:48 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:09:15 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
 
-int		aprox(double a, double b)
+int		m_aprox(double a, double b)
 {
 	return (vabs(b - a) < 0.001);
 }

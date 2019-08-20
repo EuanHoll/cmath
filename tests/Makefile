@@ -3,27 +3,32 @@
 #                                                         ::::::::             #
 #    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
-#    By: euan <ehollidg@student.codam.nl>             +#+                      #
+#    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
-#    Created: 2019/04/04 15:51:09 by euan           #+#    #+#                 #
-#    Updated: 2019/08/20 12:42:59 by ehollidg      ########   odam.nl          #
+#    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
+#    Updated: 2019/08/20 12:48:38 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main 
+ifeq ($(shell uname -s), Linux)
+BREW := /usr
+else
+BREW := $(shell brew --cellar)/..
+endif
+
+NAME = tests
+SRC = calc/abs
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRC:%=%.o)
-NAME = tester
-FLAGS = -Wall -Werror -Wextra
-INCLUDES = -I cmath/includes
-LIBS = cmath/cmath.a
+INCLUDES = -I ../cmath/includes -I $(BREW)/include
+LIBS = ../cmath/cmath.a -L $(BREW)/lib -lcriterion
 
 all: $(NAME)
 
 $(NAME): $(SRCF)
-	@make -C cmath/
-	@clang $(FLAGS) $(INCLUDES) -c $(SRCF)
-	clang -o $(NAME) $(OBJ) $(LIBS)
+	@echo "Building Tests"
+	@gcc -o $(NAME) $(SRCF) $(LIBS)
+	@echo "Tests Built"
 
 clean:
 	@make -C cmath/ clean

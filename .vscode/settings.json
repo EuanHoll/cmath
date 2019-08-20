@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		"cmath.h": "c",
+		"criterion.h": "c"
+	}
+}

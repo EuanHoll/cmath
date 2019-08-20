@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 14:27:31 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 14:28:08 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	min_d(double a, double b)
+double	m_min_d(double a, double b)
 {
 	return (a < b ? a : b);
 }

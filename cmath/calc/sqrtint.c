@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:58:16 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/05/31 15:01:00 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	sqrtint(unsigned int nb)
+unsigned int	m_sqrtint(unsigned int nb)
 {
 	unsigned int i;
 	unsigned int j;
