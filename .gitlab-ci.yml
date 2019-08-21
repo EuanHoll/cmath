@@ -1,7 +1,8 @@
 stage:
-    - build
+    - run
 
-build:
+run:
+    stage: run
     script:
         - make
     after_script:
