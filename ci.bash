@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get install software-properties-common
+apt-get install -y software-properties-common curl
 add-apt-repository -y ppa:snaipewastaken/ppa
 apt-get update
 apt-get install -y criterion-dev
