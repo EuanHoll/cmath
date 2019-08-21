@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get install -y sudo
+apt-get update
 apt-get install software-properties-common
 add-apt-repository -y ppa:snaipewastaken/ppa
 apt-get update
