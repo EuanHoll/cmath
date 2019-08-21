@@ -6,7 +6,7 @@
 #    By: euan <ehollidg@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/04/04 15:51:09 by euan           #+#    #+#                 #
-#    Updated: 2019/08/21 17:30:13 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 18:38:26 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,8 +25,8 @@ $(NAME): $(SRCF)
 	@echo "Starting Building"
 	@make -C cmath/ GCOV=$(GCOV)
 	@make -C tests/ GCOV=$(GCOV)
-	@clang $(FLAGS) $(INCLUDES) -c $(SRCF)
-	@clang -o $(NAME) $(OBJ) $(LIBS)
+	@gcc $(FLAGS) $(INCLUDES) -c $(SRCF)
+	@gcc -o $(NAME) $(OBJ) $(LIBS)
 	@echo "Finished Building"
 
 clean:
