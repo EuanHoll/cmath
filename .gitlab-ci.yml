@@ -4,6 +4,6 @@ stages:
 run:
     stage: run
     script:
-        - make
+        - bash ci.bash
     after_script:
-        - bash <(curl -s https://codecov.io/bash) -t <f4452f54-1eef-488a-9894-ce1dd4f6effa>
+        - bash <(curl -s https://codecov.io/bash) -X gcov -t e087343b-5501-4bc0-aa2f-88e359393b99

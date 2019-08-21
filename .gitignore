@@ -7,3 +7,5 @@ tests/tests
 .vscode/settings.json
 *.json
 .DS_Store
+*.gcda
+*.gcno
