@@ -6,3 +6,4 @@ tests/tests
 tests/tests
 .vscode/settings.json
 *.json
+.DS_Store
