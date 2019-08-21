@@ -1,5 +1,10 @@
 environment:
-    CODECOV_TOKEN: uuid-repo-token
+    CODECOV_TOKEN: f4452f54-1eef-488a-9894-ce1dd4f6effa
 
-after_success:
+stages:
+    - build
+    - test
+    - final
+
+final:
     - bash <(curl -s https://codecov.io/bash)
