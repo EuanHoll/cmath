@@ -6,11 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 15:35:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/21 13:34:48 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int			m_sign(double val)
 {
-	return (val < 0 ? -1 : 1);	
+	return (val < 0 ? -1 : 1);
 }

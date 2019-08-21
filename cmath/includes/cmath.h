@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 15:11:11 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/21 13:56:53 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@
 # define E 2.71828182845904523
 # define DETAIL 25
 
-//Calc
+/*
+** Calc
+*/
+
 unsigned long	m_powlo(unsigned long base, unsigned long expo);
 unsigned int	m_powint(unsigned int base, unsigned int expo);
 unsigned long	m_sqrtlo(unsigned long nb);
@@ -41,7 +44,9 @@ int				m_sign(double val);
 float			m_perlin2d(float x, float y, float freq, float depth);
 double			m_fract(double val);
 
-//Trig
+/*
+** Trig
+*/
 double			m_tan(double val);
 double			m_sin(double val);
 double			m_cos(double val);
