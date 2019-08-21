@@ -1,5 +1,8 @@
-script:
-    - make
+stage:
+    - build
 
-after_script:
+build:
+    script:
+        - make
+    after_script:
         - bash <(curl -s https://codecov.io/bash) -t <f4452f54-1eef-488a-9894-ce1dd4f6effa>
