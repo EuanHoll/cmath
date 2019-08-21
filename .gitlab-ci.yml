@@ -1,7 +1,11 @@
 stages:
-    - build
     - test
     - final
+
+test:
+    script:
+        - make
+    when: always
 
 final:
     stage: cleanup
