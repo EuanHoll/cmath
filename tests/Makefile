@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/20 15:57:39 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 14:13:09 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ BREW := $(shell brew --cellar)/..
 endif
 
 NAME = tests
-SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor
+SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
+	calc/fract
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRC:%=%.o)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
