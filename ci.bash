@@ -1,6 +1,7 @@
 #!/bin/bash
-export HOMEBREW_NO_AUTO_UPDATE=1
-brew install snaipe/soft/criterion
+sudo add-apt-repository -y ppa:snaipewastaken/ppa
+sudo apt-get update
+sudo apt-get install -y criterion-dev
 make GCOV=TRUE
 ./tests/tests
 cd cmath
