@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 15:45:15 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 16:00:02 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/21 18:19:28 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static float	noise2d(float x, float y)
 
 static void		fixnegatives(float *x, float *y, float *freq)
 {
-	if (x < 0 || y < 0)
+	if (&x < 0 || &y < 0)
 		*freq *= 2;
 	if (*x < 0)
 		*x = m_abs(*x);
