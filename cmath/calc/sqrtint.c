@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:58:16 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/20 14:29:20 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/21 16:25:23 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ unsigned int	m_sqrtint(unsigned int nb)
 	unsigned int j;
 
 	i = 1;
-	j = 0;
 	if (nb <= 0)
 		return (0);
 	if (nb % 2 == 0)

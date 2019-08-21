@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 16:12:49 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 16:16:05 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ NAME = tests
 SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
 	calc/fract calc/lerp calc/max calc/max_d calc/min calc/min_d calc/round \
 	calc/powint calc/powlo calc/lerpinverse calc/lerpunclamped calc/perlin2d \
-	calc/sign calc/sqrtint
+	calc/sign calc/sqrtint calc/sqrtlo
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRC:%=%.o)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
