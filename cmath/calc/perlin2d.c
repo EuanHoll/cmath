@@ -6,9 +6,11 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 15:45:15 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 13:56:01 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/21 16:00:02 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "cmath.h"
 
 static int		noise2(int x, int y)
 {
@@ -38,7 +40,7 @@ static int		noise2(int x, int y)
 
 static float	smooth(float x, float y, float s)
 {
-	return (x + (s * s * (3 - 2 * s)) * (y - x));
+	return (x + (s * s * (3 - (2 * s))) * (y - x));
 }
 
 static float	noise2d(float x, float y)
@@ -59,16 +61,27 @@ static float	noise2d(float x, float y)
 	return (smooth(fvalarry[2], fvalarry[3], fvalarry[1]));
 }
 
+static void		fixnegatives(float *x, float *y, float *freq)
+{
+	if (x < 0 || y < 0)
+		*freq *= 2;
+	if (*x < 0)
+		*x = m_abs(*x);
+	if (*y < 0)
+		*y = m_abs(*y);
+}
+
 float			m_perlin2d(float x, float y, float freq, float depth)
 {
 	float	fvals[5];
 	int		i;
 
+	fixnegatives(&x, &y, &freq);
 	fvals[0] = x * freq;
 	fvals[1] = y * freq;
 	fvals[2] = 1;
 	fvals[3] = 0;
-	fvals[4] = 0.0;
+	fvals[4] = 0;
 	i = 0;
 	while (i < depth)
 	{
@@ -79,5 +92,7 @@ float			m_perlin2d(float x, float y, float freq, float depth)
 		fvals[1] *= 2;
 		i++;
 	}
+	if (fvals[3] == 0)
+		return (0);
 	return (fvals[3] / fvals[4]);
 }
