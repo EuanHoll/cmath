@@ -2,6 +2,7 @@ stages:
     - run
 
 run:
+    image: linux
     stage: run
     script:
         - bash ci.bash
