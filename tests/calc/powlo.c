@@ -5,22 +5,46 @@
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/05/31 13:45:15 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 15:14:26 by ehollidg      ########   odam.nl         */
+/*   Created: 2019/08/21 15:05:05 by ehollidg       #+#    #+#                */
+/*   Updated: 2019/08/21 15:14:07 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	m_powlo(unsigned long base, unsigned long expo)
-{
-	unsigned long i;
+#include "cmath.h"
+#include <criterion/criterion.h>
+#include <limits.h>
 
-	if  (expo == 0)
-		return (1);
-	i = base;
-	while (expo > 1)
-	{
-		i *= base;
-		expo--;
-	}
-	return (i);
+Test(powlo, zero01)
+{
+	cr_assert(m_powlo(0, 0) == 1);
+}
+
+Test(powlo, zero02)
+{
+	cr_assert(m_powlo(5, 0) == 1);
+}
+
+Test(powlo, zero03)
+{
+	cr_assert(m_powlo(0, 5) == 0);
+}
+
+Test(powlo, Test01)
+{
+	cr_assert(m_powlo(5, 2) == 25);
+}
+
+Test(powlo, Test02)
+{
+	cr_assert(m_powlo(2, 2) == 4);
+}
+
+Test(powlo, Test03)
+{
+	cr_assert(m_powlo(5, 5) == 3125);
+}
+
+Test(powlo, Test04)
+{
+	cr_assert(m_powlo(5, 0) == 1);
 }
