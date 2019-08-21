@@ -1,4 +1,4 @@
-env:
+environment:
     global:
         - CODECOV_TOKEN=:uuid-repo-token
 
