@@ -7,4 +7,7 @@ stages:
     - final
 
 final:
-    - bash <(curl -s https://codecov.io/bash)
+    stage: cleanup
+    script:
+        - bash <(curl -s https://codecov.io/bash)
+    when: always
