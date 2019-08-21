@@ -2,7 +2,7 @@ stages:
     - run
 
 run:
-    image: linux
+    image: ubuntu:19.04
     stage: run
     script:
         - bash ci.bash
