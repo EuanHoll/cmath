@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 17:55:12 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 18:40:36 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@echo "Building Tests"
-	@gcc -o $(NAME) $(OBJ) $(INCLUDES) $(LIBS) $(FLAGS)
+	@gcc -o $(NAME) $(OBJ) $(INCLUDES) $(LIBS) $(FLAGS) -lm
 	@echo "Tests Built"
 
 %.o: %.c

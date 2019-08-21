@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 15:02:05 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 17:53:19 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 18:40:25 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ $(NAME): $(OBJ)
 	ar -rcsv $(NAME) $(OBJ)
 
 %.o: %.c
-	gcc $(FLAGS) -o $@ -c $< -I ./includes
+	gcc $(FLAGS) -o $@ -c $< -I ./includes -lm
 
 clean:
 	rm -f $(OBJ) ./includes/cmath.gch
