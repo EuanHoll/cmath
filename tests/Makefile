@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 14:46:06 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 14:53:18 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ endif
 
 NAME = tests
 SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
-	calc/fract calc/lerp calc/max calc/max_d calc/min
+	calc/fract calc/lerp calc/max calc/max_d calc/min calc/min_d calc/round 
 SRCF = $(SRC:%=%.c)
 OBJ = $(SRC:%=%.o)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
