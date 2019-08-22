@@ -1,0 +1,9 @@
+codecov:
+  notify: false
+
+coverage:
+  round: down
+  precision: 2
+
+fixes:
+  - "::cmath/"
