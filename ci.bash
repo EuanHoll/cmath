@@ -6,10 +6,9 @@ apt-get update
 apt-get install -y criterion-dev
 make GCOV=TRUE LINK=TRUE
 ./tests/tests
-echo "Before CD"
 cd cmath
+pwd
 gcov -f -b -c calc/*.c trig/*.c 1>/dev/null 2>/dev/null
-echo "After CD"
 if [[ $1 == TRUE ]]; then
 rm -rf *.c.gcov
 fi
