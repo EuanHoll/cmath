@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 18:40:36 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/21 18:48:47 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,9 @@ else
 BREW := $(shell brew --cellar)/..
 endif
 
-GCOV=
+GCOV =
+LINK =
+FLAGS =
 NAME = tests
 SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
 	calc/fract calc/lerp calc/max calc/max_d calc/min calc/min_d calc/round \
@@ -26,17 +28,20 @@ SRC := $(SRC:%=%.c)
 OBJ = $(SRC:%.c=%.o)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
 LIBS = ../cmath/cmath.a -L $(BREW)/lib -lcriterion
-FLAGS = 
 
 ifeq ($(GCOV), TRUE)
 	FLAGS += -coverage
+endif
+
+ifeq ($(LINK), TRUE)
+	FLAGS += -lm
 endif
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@echo "Building Tests"
-	@gcc -o $(NAME) $(OBJ) $(INCLUDES) $(LIBS) $(FLAGS) -lm
+	@gcc -o $(NAME) $(OBJ) $(INCLUDES) $(LIBS) $(FLAGS)
 	@echo "Tests Built"
 
 %.o: %.c
