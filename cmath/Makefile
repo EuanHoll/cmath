@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 15:02:05 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 18:48:42 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/22 13:26:53 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ LINK =
 CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
 	   ceil round abs approx clamp clamp01 lerp lerpunclamped \
 	   lerpinverse sign perlin2d fract
-TRIG = tan cos sin log
+TRIG = tan cos sin
 SRC = $(CALC:%=calc/%.c) $(TRIG:%=trig/%.c)
 OBJ = $(SRC:%.c=%.o)
 GCNO = $(OBJ:%.o=%.gcno)

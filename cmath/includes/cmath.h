@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 13:56:53 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/22 13:26:45 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,5 @@ double			m_fract(double val);
 double			m_tan(double val);
 double			m_sin(double val);
 double			m_cos(double val);
-double			m_log(double val);
 
 #endif
