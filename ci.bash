@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get install -y software-properties-common curl make gcc
+apt-get install -y software-properties-common curl make gcc ggcov
 add-apt-repository -y ppa:snaipewastaken/ppa
 apt-get update
 apt-get install -y criterion-dev
