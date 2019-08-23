@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/21 16:08:07 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/23 17:21:01 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/23 18:02:56 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,9 @@ Test(sqrtlo, test08)
 Test(sqrtlo, test09)
 {
 	cr_assert(m_sqrtlo(65) == 0);
+}
+
+Test(sqrtlo, test10)
+{
+	cr_assert(m_sqrtlo(345348745345) == 0);
 }

@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/20 15:39:09 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 15:09:47 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/23 18:09:39 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,9 @@ Test(clamp, above)
 Test(clamp, reversed)
 {
 	cr_assert(m_clamp(4, 5, 0) == 0);
+}
+
+Test(clamp, inbetween)
+{
+	cr_assert(m_clamp(4, 3, 5) == 4);
 }
