@@ -7,4 +7,5 @@ run:
     script:
         - bash ci.bash
     after_script:
-        - bash <(curl -s https://codecov.io/bash) -t e087343b-5501-4bc0-aa2f-88e359393b99
+        - cd cmath
+        - bash <(curl -s https://codecov.io/bash) -X gcov -t e087343b-5501-4bc0-aa2f-88e359393b99
