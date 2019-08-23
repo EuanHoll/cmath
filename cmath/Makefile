@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 15:02:05 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/22 13:26:53 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/23 17:24:09 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ $(NAME): $(OBJ)
 
 clean:
 	rm -f $(OBJ) ./includes/cmath.gch
-	rm -f $(GCNO) $(GCDA) $(GCOV)
+	rm -f $(GCNO) $(GCDA) $(GCOV) *.c.gcov
 
 mclean: $(NAME) clean
 

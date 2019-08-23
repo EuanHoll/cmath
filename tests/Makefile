@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/20 12:42:23 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/08/21 18:48:47 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/08/23 17:25:24 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,9 @@ SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
 	calc/sign calc/sqrtint calc/sqrtlo trig/cos trig/sin trig/tan
 SRC := $(SRC:%=%.c)
 OBJ = $(SRC:%.c=%.o)
+GCNO = $(OBJ:%.o=%.gcno)
+GCDA = $(OBJ:%.o=%.gcda)
+GCOV = $(SRC:%=%.gcov)
 INCLUDES = -I ../cmath/includes -I $(BREW)/include
 LIBS = ../cmath/cmath.a -L $(BREW)/lib -lcriterion
 
@@ -49,6 +52,7 @@ $(NAME): $(OBJ)
 
 clean:
 	rm -f $(OBJ)
+	rm -f $(GCNO) $(GCDA) $(GCOV) *.c.gcov
 
 fclean: clean
 	rm -f $(NAME)
