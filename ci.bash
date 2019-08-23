@@ -1,6 +1,6 @@
 #!/bin/bash
 OS=`uname -s`
-if [[$OS == Linux]]; then
+if [[ $OS == "Linux" ]]; then
 	apt-get update
 	apt-get install -y software-properties-common curl make gcc ggcov
 	add-apt-repository -y ppa:snaipewastaken/ppa
