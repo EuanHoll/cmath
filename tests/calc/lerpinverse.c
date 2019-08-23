@@ -6,14 +6,13 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/21 15:16:42 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/21 15:30:21 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/23 18:18:41 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmath.h"
 #include <criterion/criterion.h>
 #include <limits.h>
-#include <stdio.h>
 
 Test(lerpinverse, zero01)
 {
