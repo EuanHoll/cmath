@@ -18,3 +18,4 @@ gcov -f -b -c calc/*.c trig/*.c
 if [[ $1 == TRUE ]]; then
 rm -rf *.c.gcov
 fi
+cd ..
