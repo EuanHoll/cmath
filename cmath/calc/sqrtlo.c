@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:54:03 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/23 18:18:45 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/23 18:21:39 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ unsigned long	m_sqrtlo(unsigned long nb)
 		return (0);
 	if (nb % 2 == 0)
 		i++;
-	while (i <= nb / (long)2)
+	while (i <= nb / 2)
 	{
 		j = i * i;
 		if (j > nb)
