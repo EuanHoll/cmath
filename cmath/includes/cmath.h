@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/31 13:42:30 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/08/22 13:26:45 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/08/28 12:53:07 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,19 @@
 # define PI2 6.28318530718
 # define E 2.71828182845904523
 # define DETAIL 25
+
+typedef struct		s_vec2
+{
+	float x;
+	float y;
+}					t_vec2;
+
+typedef struct		s_vec3
+{
+	float x;
+	float y;
+	float z;
+}					t_vec3;
 
 /*
 ** Calc
