@@ -23,7 +23,8 @@ NAME = tests
 SRC = calc/abs calc/approx calc/ceil calc/clamp calc/clamp01 calc/floor \
 	calc/fract calc/lerp calc/max calc/max_d calc/min calc/min_d calc/round \
 	calc/powint calc/powlo calc/lerpinverse calc/lerpunclamped calc/perlin2d \
-	calc/sign calc/sqrtint calc/sqrtlo trig/cos trig/sin trig/tan
+	calc/sign calc/sqrtint calc/sqrtlo trig/cos trig/sin trig/tan \
+	vector/dist_vec2
 SRC := $(SRC:%=%.c)
 OBJ = $(SRC:%.c=%.o)
 GCNO = $(OBJ:%.o=%.gcno)
