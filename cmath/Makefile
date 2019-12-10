@@ -16,7 +16,7 @@ CALC = powlo powint sqrtlo sqrtint min min_d max max_d floor \
 	   ceil round abs approx clamp clamp01 lerp lerpunclamped \
 	   lerpinverse sign perlin2d fract
 TRIG = tan cos sin
-VEC = dist_vec2 dist_vec3
+VEC = dist_vec2 dist_vec3 dot_vec2 dot_vec3
 SRC = $(CALC:%=calc/%.c) $(TRIG:%=trig/%.c) $(VEC:%=vector/%.c)
 OBJ = $(SRC:%.c=%.o)
 GCNO = $(OBJ:%.o=%.gcno)
